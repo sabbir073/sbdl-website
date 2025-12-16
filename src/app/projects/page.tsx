@@ -70,6 +70,15 @@ const projects = [
         landSize: "30 Katha",
         imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
         slug: "eco-tower"
+    },
+    {
+        title: "SBD Sailor's Solace",
+        category: "Residential",
+        location: "Agrabad, Chattogram",
+        status: "Ongoing",
+        landSize: "10 Katha",
+        imageUrl: "/project/solace.jpg",
+        slug: "sbd-sailors-solace"
     }
 ] as const;
 
