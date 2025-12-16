@@ -23,7 +23,7 @@ const projects = [
         location: "House-506, Shah Kabir Mazar Road, Dakkhinkhan, Dhaka-1230",
         status: "Completed",
         landSize: "26 Katha",
-        imageUrl: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop",
+        imageUrl: "/project/omar-shahjahan-tower.jpg",
         slug: "omar-shajahan-tower"
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         location: "House-923, East Ashkuna, Dakkhinkhan, Dhaka-1230",
         status: "Completed",
         landSize: "13 Katha",
-        imageUrl: "https://images.unsplash.com/photo-1600596542815-2495db98dada?q=80&w=2070&auto=format&fit=crop",
+        imageUrl: "/project/Hasina-Monjil.jpg",
         slug: "hasina-monjil"
     },
     {
@@ -41,7 +41,7 @@ const projects = [
         location: "Road-8A, North Ranavula, Sector-10, Uttara, Dhaka-1230",
         status: "Completed",
         landSize: "8 Katha",
-        imageUrl: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+        imageUrl: "/project/Shahid-Tower.jpg",
         slug: "shahid-tower"
     },
     {
@@ -50,7 +50,7 @@ const projects = [
         location: "Shofor Ali Shoroni, Middle Azampur, Kacha Bazar, Dakshinkhan, Dhaka-1230",
         status: "Ongoing",
         landSize: "12 Katha",
-        imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2074&auto=format&fit=crop",
+        imageUrl: "/project/Hashem-Village.jpg",
         slug: "hashems-village"
     },
     {
@@ -59,7 +59,7 @@ const projects = [
         location: "Opposite of New Dakshinkhan Thana, Gono Koborsthan Road, Dakshinkhan, Dhaka",
         status: "Ongoing",
         landSize: "30 Katha",
-        imageUrl: "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=2084&auto=format&fit=crop",
+        imageUrl: "/project/New-Uttara-City.jpg",
         slug: "new-uttara-city"
     },
     {
@@ -68,7 +68,7 @@ const projects = [
         location: "Dakkhin Chayabithi, Near Shahid Tajuddin Medical College, Gazipur Sadar, Gazipur",
         status: "Ongoing",
         landSize: "30 Katha",
-        imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+        imageUrl: "/project/Eco-Tower.jpg",
         slug: "eco-tower"
     },
     {
@@ -219,7 +219,7 @@ export default function ProjectsPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?q=80&w=2084&auto=format&fit=crop"
+                                src="/project/New-Uttara-City.jpg"
                                 alt="New Uttara City"
                                 fill
                                 className="object-cover"

@@ -231,19 +231,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
-              title="Jannat Tower"
-              category="Residential"
-              location="Memberbari Railgate, Azampur, Uttara"
-              status="Completed"
-              imageUrl="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop"
-              slug="jannat-tower"
-            />
-            <ProjectCard
               title="Omar-Shajahan Tower"
               category="Commercial & Residential"
               location="Shah Kabir Mazar Road, Dakkhinkhan"
               status="Completed"
-              imageUrl="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop"
+              imageUrl="/project/omar-shahjahan-tower.jpg"
               slug="omar-shajahan-tower"
             />
             <ProjectCard
@@ -251,8 +243,16 @@ export default function Home() {
               category="Residential"
               location="Gono Koborsthan Road, Dakshinkhan"
               status="Ongoing"
-              imageUrl="https://images.unsplash.com/photo-1600596542815-2495db98dada?q=80&w=2070&auto=format&fit=crop"
+              imageUrl="/project/New-Uttara-City.jpg"
               slug="new-uttara-city"
+            />
+            <ProjectCard
+              title="SBD Sailor's Solace"
+              category="Residential"
+              location="Agrabad, Chattogram"
+              status="Ongoing"
+              imageUrl="/project/solace.jpg"
+              slug="sbd-sailors-solace"
             />
           </div>
         </div>
