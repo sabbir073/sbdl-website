@@ -275,9 +275,9 @@ export default function ProjectsPage() {
                         <Link href="/contact">
                             <Button variant="gold" size="lg">Contact Us</Button>
                         </Link>
-                        <Link href="tel:+8801308407027">
+                        <Link href="tel:+8801813087877">
                             <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-green-900">
-                                Call: +880 1308-407027
+                                Call: +880 1813-087877
                             </Button>
                         </Link>
                     </div>

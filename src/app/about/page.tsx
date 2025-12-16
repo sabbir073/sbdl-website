@@ -7,18 +7,18 @@ export const metadata = {
 };
 
 const teamMembers = [
-    { name: 'Capt. Md. Ashraful Alam', role: 'Managing Partner & CEO', title: 'Master Mariner (Class-1), Marine Surveyor and Consultant, Bay Pilot, Founder & Director: Welcome Properties Ltd' },
-    { name: 'Capt. Md. Ashikur Rahman', role: 'Partner', title: 'Master Mariner (Class-1)' },
-    { name: 'Capt. Mohammad Faizur Rahman', role: 'Partner', title: 'Master Mariner (Class-1)' },
-    { name: 'CE. Md Lutful Kabir', role: 'Partner', title: 'Marine Chief Engineer (Class-1)' },
-    { name: 'Capt. Md Rahmat Ullah Shahidi', role: 'Partner', title: 'Master Mariner (Class-1)' },
-    { name: 'Ms. Rubana Parvin', role: 'Partner', title: 'Wife of Mahmodur Rahman, MMD Surveyor, Ex: Marine Ch. Eng. (Class-1)' },
-    { name: 'Mr. Md. Atiqul Islam', role: 'Partner', title: 'Chartered Accountant, Managing Director SNBD' },
-    { name: 'Mr. M.A. Hakim', role: 'Partner', title: 'Businessman' },
-    { name: 'Capt. Md Masud Alam', role: 'Partner', title: 'Master Mariner (Class-1), Marine Surveyor and Consultant, Bay Pilot' },
-    { name: 'Mr. Efthekhar Ahmed', role: 'Partner', title: 'Businessman' },
-    { name: 'Capt. Abdul Alim', role: 'Partner', title: 'Master Mariner (Class-1)' },
-    { name: 'Capt. Salahuddin Ahmed Prodhan', role: 'Partner', title: 'Master Mariner (Class-1), Marine Surveyor and Consultant, Bay Pilot' },
+    { name: 'Capt. Md. Ashraful Alam', role: 'Managing Partner & CEO', title: 'Master Mariner (Class-1), Marine Surveyor and Consultant, Bay Pilot, Founder & Director: Welcome Properties Ltd', image: '/partner/md-ashraful-alam.jpg' },
+    { name: 'Capt. Md. Ashikur Rahman', role: 'Partner', title: 'Master Mariner (Class-1)', image: '/partner/md-ashikur-rahman.jpg' },
+    { name: 'Capt. Mohammad Faizur Rahman', role: 'Partner', title: 'Master Mariner (Class-1)', image: '/partner/mohammad-faizur-rahman.jpg' },
+    { name: 'CE. Md Lutful Kabir', role: 'Partner', title: 'Marine Chief Engineer (Class-1)', image: '/partner/md-lutful-kabir.jpg' },
+    { name: 'Capt. Md Rahmat Ullah Shahidi', role: 'Partner', title: 'Master Mariner (Class-1)', image: '/partner/md-rahmat-ullah-shahidi.jpg' },
+    { name: 'Ms. Rubana Parvin', role: 'Partner', title: 'Wife of Mahmodur Rahman, MMD Surveyor, Ex: Marine Ch. Eng. (Class-1)', image: '/partner/ms-rubana-parvin.jpg' },
+    { name: 'Mr. Md. Atiqul Islam', role: 'Partner', title: 'Chartered Accountant, Managing Director SNBD', image: '/partner/md-atiqul-islam.jpg' },
+    { name: 'Mr. M.A. Hakim', role: 'Partner', title: 'Businessman', image: '/partner/ma-hakim.jpg' },
+    { name: 'Capt. Md Masud Alam', role: 'Partner', title: 'Master Mariner (Class-1), Marine Surveyor and Consultant, Bay Pilot', image: '/partner/md-masud-alam.jpg' },
+    { name: 'Mr. Efthekhar Ahmed', role: 'Partner', title: 'Businessman', image: '/partner/efthekhar-ahmed.jpg' },
+    { name: 'Capt. Abdul Alim', role: 'Partner', title: 'Master Mariner (Class-1)', image: '/partner/abdul-alim.jpg' },
+    { name: 'Capt. Salahuddin Ahmed Prodhan', role: 'Partner', title: 'Master Mariner (Class-1), Marine Surveyor and Consultant, Bay Pilot', image: '/partner/salahuddin-ahmed-prodhan.jpg' },
 ];
 
 const qualityGoals = [
@@ -133,7 +133,7 @@ export default function AboutPage() {
                             <p className="text-green-100 mb-8 leading-relaxed">
                                 Quality control and assurance involves overseeing project implementation processes from
                                 pre-development to project exit. We aim for the highest quality standards that ensure
-                                client's interests and expectations are met.
+                                client&apos;s interests and expectations are met.
                             </p>
                             <div className="space-y-3">
                                 {qualityGoals.map((goal) => (
@@ -201,7 +201,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="text-xl font-bold text-green-900 mb-3">Inflation Hedge</h3>
                             <p className="text-gray-600 text-sm">
-                                Real estate provides a hedge against inflation as the asset's value grows in tandem
+                                Real estate provides a hedge against inflation as the asset&apos;s value grows in tandem
                                 or higher than the inflation rate.
                             </p>
                         </div>
@@ -237,11 +237,16 @@ export default function AboutPage() {
 
                     {/* CEO Highlight */}
                     <div className="bg-green-50 rounded-2xl p-8 mb-12 border border-green-100">
-                        <div className="flex flex-col md:flex-row items-center gap-8">
-                            <div className="h-32 w-32 bg-green-800 rounded-full flex items-center justify-center shrink-0">
-                                <span className="text-4xl font-bold text-gold-400">MA</span>
+                        <div className="flex flex-col items-center text-center gap-6">
+                            <div className="relative h-48 w-48 md:h-56 md:w-56 rounded-full overflow-hidden border-4 border-gold-500 shadow-xl">
+                                <Image
+                                    src={teamMembers[0].image}
+                                    alt={teamMembers[0].name}
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
-                            <div className="text-center md:text-left">
+                            <div>
                                 <span className="inline-block px-3 py-1 bg-gold-500 text-green-900 text-xs font-bold rounded-full mb-2">
                                     Managing Partner & CEO
                                 </span>
@@ -253,19 +258,24 @@ export default function AboutPage() {
                     </div>
 
                     {/* Other Team Members */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {teamMembers.slice(1).map((member) => (
-                            <div key={member.name} className="bg-white p-6 rounded-xl shadow-sm border border-green-100 hover:shadow-lg transition-shadow">
-                                <div className="h-16 w-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                                    <span className="text-xl font-bold text-green-800">
-                                        {member.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                                    </span>
+                            <div key={member.name} className="bg-white p-6 rounded-xl shadow-sm border border-green-100 hover:shadow-lg transition-shadow group">
+                                <div className="relative h-36 w-36 sm:h-40 sm:w-40 rounded-full overflow-hidden mx-auto mb-5 border-3 border-green-200 group-hover:border-gold-500 transition-colors shadow-md">
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
-                                <span className="inline-block px-2 py-0.5 bg-green-100 text-green-800 text-xs font-medium rounded mb-2">
-                                    {member.role}
-                                </span>
-                                <h4 className="text-lg font-bold text-green-900 mb-1">{member.name}</h4>
-                                <p className="text-gray-600 text-sm">{member.title}</p>
+                                <div className="text-center">
+                                    <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full mb-2">
+                                        {member.role}
+                                    </span>
+                                    <h4 className="text-lg font-bold text-green-900 mb-1">{member.name}</h4>
+                                    <p className="text-gray-600 text-sm">{member.title}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

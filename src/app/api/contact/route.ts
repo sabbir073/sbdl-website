@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
                         </div>
 
                         <p style="color: #666; line-height: 1.6;">
-                            If you have any urgent queries, feel free to call us at <strong>+880 1308-407027</strong>.
+                            If you have any urgent queries, feel free to call us at <strong>+880 1813-087877</strong>.
                         </p>
 
                         <p style="color: #666; line-height: 1.6;">
@@ -91,7 +91,7 @@ export async function POST(request: NextRequest) {
                             506, Omar-Shajahan Tower (3rd floor), Shah Kabir Mazar Road, Azampur Railgate, Uttara, Dhaka-1230
                         </p>
                         <p style="color: #d4af37; margin: 5px 0 0 0; font-size: 12px;">
-                            www.sinbadbdl.com | +880 1308-407027
+                            www.sinbadbdl.com | +880 1813-087877
                         </p>
                     </div>
                 </div>
@@ -105,14 +105,14 @@ Your Message Details:
 Interest: ${interestLabels[interest] || 'Not specified'}
 Message: ${message}
 
-If you have any urgent queries, feel free to call us at +880 1308-407027.
+If you have any urgent queries, feel free to call us at +880 1813-087877.
 
 Best regards,
 Sinbad Builders & Developers Team
 
 ---
 506, Omar-Shajahan Tower (3rd floor), Shah Kabir Mazar Road, Azampur Railgate, Uttara, Dhaka-1230
-www.sinbadbdl.com | +880 1308-407027
+www.sinbadbdl.com | +880 1813-087877
             `,
         };
 
@@ -202,7 +202,7 @@ This email was sent from the contact form on sinbadbdl.com
     } catch (error) {
         console.error('Contact form error:', error);
         return NextResponse.json(
-            { error: 'Failed to send message. Please try again later or contact us directly at +880 1308-407027.' },
+            { error: 'Failed to send message. Please try again later or contact us directly at +880 1813-087877.' },
             { status: 500 }
         );
     }

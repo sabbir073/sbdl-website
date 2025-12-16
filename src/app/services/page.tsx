@@ -281,7 +281,7 @@ export default function ServicesPage() {
                         </Link>
                     </div>
                     <p className="mt-8 text-sm text-gray-500">
-                        For more information contact us: <a href="mailto:info@sinbadbdl.com" className="text-green-700 font-medium">info@sinbadbdl.com</a> | <a href="tel:+8801308407027" className="text-green-700 font-medium">+880 1308-407027</a>
+                        For more information contact us: <a href="mailto:info@sinbadbdl.com" className="text-green-700 font-medium">info@sinbadbdl.com</a> | <a href="tel:+8801813087877" className="text-green-700 font-medium">+880 1813-087877</a>
                     </p>
                 </div>
             </section>

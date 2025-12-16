@@ -36,9 +36,9 @@ export default function ContactPage() {
             <section className="py-6 bg-green-800">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="flex flex-wrap justify-center gap-8 text-center">
-                        <Link href="tel:+8801308407027" className="flex items-center gap-2 text-white hover:text-gold-400 transition-colors">
+                        <Link href="tel:+8801813087877" className="flex items-center gap-2 text-white hover:text-gold-400 transition-colors">
                             <Phone className="h-5 w-5 text-gold-400" />
-                            <span>+880 1308-407027</span>
+                            <span>+880 1813-087877</span>
                         </Link>
                         <Link href="mailto:info@sinbadbdl.com" className="flex items-center gap-2 text-white hover:text-gold-400 transition-colors">
                             <Mail className="h-5 w-5 text-gold-400" />
@@ -121,8 +121,7 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <h4 className="text-sm font-bold text-green-900 mb-1">Phone</h4>
-                                            <p className="text-gray-600 text-sm">+880 1308-407027</p>
-                                            <p className="text-gray-600 text-sm">+880 1894-442911-19</p>
+                                            <p className="text-gray-600 text-sm">+880 1813-087877</p>
                                         </div>
                                     </div>
 
